@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Идея на сейчас</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="panel">
+        <p class="eyebrow">Быстрый помощник</p>
+        <h1>Идея на сейчас</h1>
+
+        <div class="hero-layout">
+          <div class="hero-copy">
+            <p class="intro">Выбери категорию и нажми кнопку. Пусть страница подкинет небольшую идею для свободного вечера.</p>
+          </div>
+        </div>
+
+        <div class="categories" aria-label="Категории идей">
+          <button class="category active" type="button" data-category="all">Все</button>
+          <button class="category" type="button" data-category="food">Еда</button>
+          <button class="category" type="button" data-category="movie">Фильм</button>
+          <button class="category" type="button" data-category="activity">Занятие</button>
+        </div>
+
+        <article class="idea-card" aria-live="polite">
+          <span class="idea-type" id="ideaType">Идея дня</span>
+          <h2 id="ideaText">Сделай домашнюю пиццу и включи любимый плейлист.</h2>
+        </article>
+
+        <button class="generate" id="generateBtn" type="button">Дай идею</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
